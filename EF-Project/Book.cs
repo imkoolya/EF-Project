@@ -7,5 +7,4 @@
     public User User { get; set; }
     public int Genre { get; set; }
     public int Author {  get; set; }
-
 }

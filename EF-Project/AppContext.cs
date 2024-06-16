@@ -5,7 +5,6 @@ public class AppContext : DbContext
     public DbSet<User> Users { get; set; }
     public DbSet<Book> Books { get; set; }
 
-
     public AppContext()
     {
         Database.EnsureCreated();
@@ -13,6 +12,6 @@ public class AppContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("@\"Data Source=.\\SQLEXPRESS;Database=EF-Project;Trusted_Connection=True;TrustServerCertificate=True;");
+        optionsBuilder.UseSqlServer("Строка для подключения");
     }
 }

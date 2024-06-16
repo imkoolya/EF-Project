@@ -64,6 +64,7 @@ public class BookRepository
     {
         return context.Books.Any(b => b.Author == authorId && b.Title == title);
     }
+
     public bool IsBookExistsByUser(int bookId, int userId)
     {
         return context.Books.Any(b => b.Id == bookId && b.UserId == userId);
